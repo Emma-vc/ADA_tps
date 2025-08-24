@@ -43,8 +43,9 @@ switch (color){
 Consigna: Crea un programa que le pida al usuario un número positivo. El programa deberá contar desde el 1 hasta ese número e imprimir cada valor en la consola. Usa un ciclo for para realizar la tarea.*/
 console.log('\n ⁘⁘⁘⁘⁘ Ejercicio 3 ⁘⁘⁘⁘⁘')
 let positivo=parseInt(prompt('Ingrese un numero positivo: '));
+console.log("Contamos hasta: " + positivo);
 for (let i = 1; i <= positivo; i++) {
-  console.log("Iteración número: " + i);
+  console.log(i);
 }
 
 /*------Ejercicio 4: ¿Es par o impar?
