@@ -118,6 +118,8 @@ for (let i =10; i>=0;i--)
 /*   Ejercicio 7: Calculadora simple
 Consigna: Crea un programa que le pida al usuario dos números y una operación matemática a realizar: suma, resta, multiplicación o división. Según la operación ingresada, el programa deberá calcular y mostrar el resultado. Si el usuario ingresa una operación inválida, el programa debe mostrar un mensaje de error. Usa switch para resolverlo.*/
 console.log('\n ⁘⁘⁘⁘⁘ Ejercicio 7 ⁘⁘⁘⁘⁘')
+// 🎵con macht case
+//
 let num1=parseFloat(prompt('Ingrese el 1er valor: '));
 let num2=parseFloat(prompt('Ingrese el 2do valor: '));
 let operacion= prompt('Que operacion matematica desea resolver con  los numeros ingresados? sumar, restar, multiplicar, o dividir?: ');
@@ -140,6 +142,31 @@ switch (operacion) {
     resolucion='Error!!!!! Operacion invalida ❌❌';
 }
 console.log('Resultado:', resolucion);
+
+//😃con while
+
+let menu=prompt(
+  'Ingrese una opcion:\n 1-Sumar \n 2-Restar \n 3-Multiplicar \n 4- Dividir \n -5 Salir');
+let nume1=parseFloat(prompt('Ingrese el 1er valor: '));
+let nume2=parseFloat(prompt('Ingrese el 2do valor: '));
+let respuesta;
+while(menu !=5){
+  if (menu==1){
+    respuesta=nume1+nume2
+  }else if (menu==2){
+    respuesta=nume1-nume2
+  }else if(menu==3){
+    respuesta=nume1*nume2
+  }else if(menu==4){
+    respuesta=nume1/nume2
+  }else{
+    console.log('Opcion invalida');
+  }
+  console.log('Respuesta:', respuesta);
+  menu=prompt(
+  'Ingrese una opcion:\n 1-Sumar \n 2-Restar \n 3-Multiplicar \n 4- Dividir \n -5 Salir');
+}
+
 
 /*   
            Ejercicio 10: Adivina el número
