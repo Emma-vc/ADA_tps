@@ -146,11 +146,12 @@ console.log('Resultado:', resolucion);
 //😃con while
 
 let menu=prompt(
-  'Ingrese una opcion:\n 1-Sumar \n 2-Restar \n 3-Multiplicar \n 4- Dividir \n -5 Salir');
-let nume1=parseFloat(prompt('Ingrese el 1er valor: '));
-let nume2=parseFloat(prompt('Ingrese el 2do valor: '));
-let respuesta;
+  'Que operacion desea realizar?\n 1- Sumar \n 2- Restar \n 3- Multiplicar \n 4- Dividir \n 5- Salir \n \t 🤗 Ingrese una opcion 🤓 ');
+
 while(menu !=5){
+  let nume1=parseFloat(prompt('Ingrese el 1er valor: '));
+  let nume2=parseFloat(prompt('Ingrese el 2do valor: '));
+  let respuesta;
   if (menu==1){
     respuesta=nume1+nume2
   }else if (menu==2){
@@ -162,9 +163,9 @@ while(menu !=5){
   }else{
     console.log('Opcion invalida');
   }
-  console.log('Respuesta:', respuesta);
+  console.log('Respuesta ➡️ :', respuesta);
   menu=prompt(
-  'Ingrese una opcion:\n 1-Sumar \n 2-Restar \n 3-Multiplicar \n 4- Dividir \n -5 Salir');
+  'Que operacion desea realizar?\n 1-Sumar \n 2-Restar \n 3-Multiplicar \n 4-Dividir \n 5-Salir \n \t 🔛 Ingrese una opcion 🔛 : ');
 }
 
 
