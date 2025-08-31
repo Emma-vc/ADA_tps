@@ -167,11 +167,25 @@ while(menu !=5){
   menu=prompt(
   'Que operacion desea realizar?\n 1-Sumar \n 2-Restar \n 3-Multiplicar \n 4-Dividir \n 5-Salir \n \t 🔛 Ingrese una opcion 🔛 : ');
 }
-
+console.log('Saliendo...... \n Nos vemos, luego 🫡 🫡');
 
 /*   
            Ejercicio 10: Adivina el número
-Consigna: Crea un programa donde la computadora seleccione un número al azar entre 1
-y 10. Luego, pide al usuario que adivine el número hasta 3 intentos. Si el usuario acierta en cualquiera de los intentos, muestra un mensaje de felicitación y detén los intentos restantes. Si no acierta después de los 3 intentos, muestra el número secreto. Usa un for para resolver este ejercicio */
-// en este ej se utiliza un similar a randint de python
-//console.log('\n ⁘⁘⁘⁘⁘ Ejercicio 10 ⁘⁘⁘⁘⁘')
+Consigna: Crea un programa donde la computadora seleccione un número al azar entre 1 y 10. Luego, pide al usuario que adivine el número hasta 3 intentos. Si el usuario acierta en cualquiera de los intentos, muestra un mensaje de felicitación y detén los intentos restantes. Si no acierta después de los 3 intentos, muestra el número secreto. Usa un for para resolver este ejercicio */
+console.log('\n ⁘⁘⁘⁘⁘ Ejercicio 10 ⁘⁘⁘⁘⁘')
+
+let adivinar=Math.ceil(Math.random()*10)
+//console.log(adivinar)
+for (i= 1; i<= 3; i++) {
+  let usuario=parseInt(prompt('Adivina el numero entre 1 y 10 😉 tenes 3 intentos: '));
+  if (usuario ===adivinar){
+    console.log('Ganaste!!!🎉🎉');
+    break
+  }else{
+    console.log('Perdiste!! intenta otra vez');
+    if (i>=3){
+      console.log(`Agotaste los 3 intentos`); 
+      console.log(`El numero secreto es ➡️ ${adivinar}`); 
+}
+}
+}
